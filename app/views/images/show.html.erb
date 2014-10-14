@@ -1,0 +1,5 @@
+<% for_for [@image, @comment] do |form| %>
+  <%= form.label :content "Add Comments"%>
+  <%= form.text_area :content %>
+
+  <%= form.submit %>

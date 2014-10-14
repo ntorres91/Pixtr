@@ -4,4 +4,10 @@
 
 <%= button_to "Delete Gallery", @gallery, method: :delete %>
 
+<% @gallery.images.each do |image| %> 
+  <%= image_tag image.url %> 
+
+<% end %> 
+
+
 
